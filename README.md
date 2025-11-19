@@ -14,16 +14,6 @@ A modern, **colorful registration form** built with HTML & CSS, featuring:
 
 **Live Demo:** [Register Form](https://TumeloSellwe.github.io/Web-Development/)
 
-**Screenshot:**
-![Register Form Screenshot](https://via.placeholder.com/600x400?text=Your+Form+Screenshot+Here)
-
----
-
-## 🗂 Other Projects
-- **Portfolio Page** – A simple, responsive personal portfolio 💼  
-- **Calculator App** – JavaScript-based calculator 🧮  
-- **Landing Page** – Colorful landing page with CSS animations ✨  
-
 ---
 
 ## 🛠 Technologies Used
