@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9bd4, #87baff);
+            color: #2d2d2d;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d6007c;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.35);
+            padding: 25px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        input, select {
+            padding: 8px;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .section {
+            margin-bottom: 15px;
+        }
+
+        button {
+            background: #d6007c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff4faf;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Register</h1>
+
+    <form>
+        <!-- Name Section -->
+        <div class="section">
+            <label>First Name:</label>
+            <input type="text" placeholder="John">
+
+            <label>Last Name:</label>
+            <input type="text" placeholder="Smith">
+        </div>
+
+        <!-- Gender Section -->
+        <div class="section">
+            <label>Male</label>
+            <input type="radio" name="gender">
+
+            <label>Female</label>
+            <input type="radio" name="gender">
+
+            <label>Other</label>
+            <input type="radio" name="gender">
+        </div>
+
+        <!-- Email & Password -->
+        <div class="section">
+            <label>Email:</label>
+            <input type="email" placeholder="your email">
+
+            <label>Password:</label>
+            <input type="password" placeholder="your password">
+        </div>
+
+        <!-- Birthday -->
+        <div class="section">
+            <label>Birthday:</label>
+            <select>
+                <option>Month</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+            </select>
+
+            <select>
+                <option>Day</option>
+            </select>
+
+            <select>
+                <option>Year</option>
+            </select>
+        </div>
+
+        <!-- Terms -->
+        <div class="section">
+            <input type="checkbox">
+            <label>I agree to the terms and conditions</label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
