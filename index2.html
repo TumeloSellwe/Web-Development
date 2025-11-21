@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <h1>Hi, I'm Tumelo!</h1>
+            <p>Welcome to my portfolio. I am passionate about web development and love creating responsive, interactive websites.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A responsive website built using HTML, CSS, and JavaScript.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Project 2</h3>
+                    <p>A dynamic web application using React and API integration.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Project 3</h3>
+                    <p>A fun interactive game built with HTML canvas and JS.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Project 4</h3>
+                    <p>Portfolio redesign using modern CSS techniques and animations.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section with Form -->
+        <section id="contact" class="section contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tumelo Sellwe</p>
+    </footer>
+
+    <!-- Smooth scroll -->
+    <script>
+        const links = document.querySelectorAll('.navbar a');
+        for (const link of links) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+</html>
